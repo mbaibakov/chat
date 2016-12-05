@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Страница входа</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form id="loginform" action="/login" method="post">
+        #if($error)
+        <label for="name" class="red">* Представьтесь, имя является является обязательным</label>
+        #end
+        <input type="text" id="name" name="name" placeholder="Введите имя" />
+        <label for="color">Выберите цвет</label>
+        <select id="color" name="color">
+            <option value="black" class="black">Черный</option>
+            <option value="red" class="red">Красный</option>
+            <option value="blue" class="blue">Синий</option>
+            <option value="green" class="green">Зеленый</option>
+        </select>
+        <input type="submit" value="Войти"  />
+    </form>
+</body>
+</html>

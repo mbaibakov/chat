@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Страница чата</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="chatControls">
+        <div>
+            <span>Hello, ${currentUser.name}</span><button id="logout">Выйти</button>
+        </div>
+        <input id="message" placeholder="Введите сообщение">
+        <input type="submit" id="send" value="Отправить"/>
+    </div>
+    <ul id="userlist"> <!-- Built by JS --> </ul>
+    <div id="chat">    <!-- Built by JS --> </div>
+    <script src="js/websocket.js"></script>
+</body>
+</html>
